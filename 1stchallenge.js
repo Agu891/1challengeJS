@@ -59,11 +59,13 @@ const rtaestudio = () => {
 
     if (usuario.Student === true){
 
-    return "si soy estudiante";
+    return "Si soy estudiante";
 }
 
-    else {return "no estudio actualmente"
+    else {return "No estudio actualmente"
     }
 }
 
 console.log(`${rtaestudio()}`)
+
+console.log(`Soy de ${usuario.City}`)
