@@ -35,7 +35,7 @@ console.log( `Por ultimo tengo que comprar${ultimascosas()}`)
 console.log(`tengo que comprar ${supermarketList.length} productos`)
 
 
-var usuario = {
+const usuario = {
 
     Username : "Nitsuga",
     Name : "Agustin",
@@ -62,7 +62,7 @@ const rtaestudio = () => {
     return "Si soy estudiante";
 }
 
-    else {return "No estudio actualmente"
+    else {return "No estudio actualmente";
     }
 }
 
