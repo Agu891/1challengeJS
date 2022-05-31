@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Peliculas</h1>
+    <div id="movies"></div>
+
+    <form onsubmit={joinMovie(event)}>
+        <input type="text"  id="movieName" placeholder="Agrega el nombre de una pelicula">
+        <input type="text"  id="movieYear" placeholder="Agrega el año de la pelicula">
+        <input class="submit" type="submit" value="Añadir datos peliculas">
+    </form>
+
+    <div id="mensaje"></div>
+    <script src="./main.js"></script>
+</body>
+</html>

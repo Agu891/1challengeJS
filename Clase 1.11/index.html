@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add & Remove Class Elements</title>
+    <style>
+        .cuadrado {
+            width: 200px;
+            height: 200px;
+            background:red
+        }
+        button {
+            background: blue;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.9rem;
+            margin-top: 1rem;
+        }
+        .cuadrado.extra {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add & Remove Class Events</h1>
+
+    <div class="cuadrado" id="cuadrado"></div>
+    <button onclick={updateBg()}>Cambiar background yellow</button>
+    <button onclick={updateBg(true)}>reset background</button>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>

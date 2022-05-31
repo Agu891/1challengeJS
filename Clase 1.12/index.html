@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class events</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        form {
+            width: 350px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0.5rem;
+            margin: 0 auto;
+        }
+
+        .input {
+            height: 50px;
+            margin-bottom: 1rem;
+        }
+
+        .submit {
+            height: 50px;
+            background: blue;
+            color: white;
+            border-radius: 0.5rem;
+        }
+
+        .input.error {
+            border: 2px solid red;
+        }
+
+        .input:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Forms with JS</h1>
+    <form onsubmit={myForm(event)}>
+        <input  class="input" id="nombre" placeholder="Escribe tu nombre" type="text" name="nombre" >
+        <input  class="input" id="apellido" placeholder="Escribe tu apellido" type="text" name="apellido" >
+        <input  class="input" id="email" placeholder="Escribe tu Email" type="email" name="email" >    
+        <input type="submit" class="submit"  value="Enviar">
+    </form>
+    <div id="formValues"></div>
+
+    <script src="/main.js"></script>
+</body>
+</html>

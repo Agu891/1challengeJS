@@ -1,0 +1,6 @@
+NODE.js : Sirve para correr  JS fuera de un browser
+
+express : framework basado en node para crear un servidor
+
+
+mongodb : base de datos (para guardar lo que genere NODE.js)

@@ -1,15 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    tp javascript
+    <h1>Prueba integracion
+    </h1>
+    <p>Helados
+    </p>
+    <select  id="helados" onchange={gustos()}> 
+        <option value="frutilla">frutilla</option>
+        <option value="limon">limon</option>
+        <option value="tramontana">tramontana</option>
 
-    <script src="1stchallenge.js"></script>
+    </select>
+    <button id="calcular" value = "hola que tal" onclick={calculadora()}>calcular</button>
+    <span > Elegiste: </span>
+    <span id="resultado"></span>
+    
+    <script src="./Pruebaintegracionhtml.js"></script>
 </body>
 
 

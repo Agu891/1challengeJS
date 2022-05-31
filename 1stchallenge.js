@@ -69,3 +69,69 @@ const rtaestudio = () => {
 console.log(`${rtaestudio()}`)
 
 console.log(`Soy de ${usuario.City}`)
+
+
+// const nombre = prompt("¿como te llamas?");
+
+// if (nombre == "Agustin") {
+//   alert("hola Agustin");
+// }
+
+// let numeroSuma = 3;
+// const numero = Number(prompt("elegi un numero"));
+
+//     if (numero ===2 ){
+//        let suma = numero + numeroSuma;
+//         alert (suma)
+//     }
+
+    //  let numeroResta = 3;
+    //  const numeroR = Number(prompt("elegi un numero"))  
+    //   if (numeroR === 4 ){
+    //     let suma = numeroR - numeroResta;      
+    //          alert (suma);
+    //  }
+
+
+
+
+
+
+   const diasdelasemana = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"]
+  
+// let dia = "Sabado"
+
+// for(let i = 0; i < diasdelasemana.length ; i++){
+//     if (dia === diasdelasemana[i] && (diasdelasemana[i] === "Lunes" || diasdelasemana[i] === "Martes" ||diasdelasemana[i] === "Miercoles" || diasdelasemana[i] === "Jueves" ||diasdelasemana[i] === "Viernes" )){
+//         console.log("Es dia Habil")
+//         break;
+//     } 
+//       else if (dia === diasdelasemana[i] && (diasdelasemana[i] === "Sabado" || diasdelasemana[i] === "Domingo")) {
+//         console.log("Es fin de semana")
+//         break;
+        
+//     }
+  
+
+   //} 
+
+    const saymyname = (nombre,apellido) =>{
+     return nombre + " " + apellido
+    }
+
+    console.log(saymyname("agus", "bertrand"))
+
+  const finde = (dia) =>{
+
+     for(let i = 0; i < diasdelasemana.length ; i++){
+         if(dia === diasdelasemana[i] && (diasdelasemana[i] === "Lunes" || diasdelasemana[i] === "Martes" ||diasdelasemana[i] === "Miercoles" || diasdelasemana[i] === "Jueves" ||diasdelasemana[i] === "Viernes" )){
+             return "Es dia habil"
+         }else if (dia === diasdelasemana[i] && (diasdelasemana[i] === "Sabado" || diasdelasemana[i] === "Domingo")) 
+         { return "Es fin de semana"}
+      
+     }
+ }
+ console.log(finde("Sabado"))
+
+
+
